@@ -3,12 +3,12 @@
 *:before {
     box-sizing: border-box;
 }
-
+/*---------define body--------------*/
 body {
     background-color: #F3F3E8;
     font-family: Helvetica, Arial, sans-serif;
 }
-
+/*-----------define main.html file----------------*/
 .hero {
     background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');
     background-size: cover;
@@ -57,7 +57,7 @@ body {
 /*------------------restaurant details-----------------*/
 .hero {
     margin-bottom: 2rem;
-	
+
 }
 
 .restaurant {
@@ -69,13 +69,13 @@ body {
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 4px;
-	
+
 }
 
 .rest-wrapper {
     display: flex;
     font-family: sans-serif;
-	
+
 }
 
 .rest-wrapper .image {
@@ -113,7 +113,7 @@ body {
      flex: none;
      margin-right: 2rem;
 }
-
+/*------restaurant rating------------------*/
 .restaurant .rating {
     color: white;
     background-color: #5BA829;
@@ -126,7 +126,7 @@ body {
     letter-spacing: 2px;
 }
 
-
+/*------------search bar details---------*/
 .search-bar {
     width: 600px;
     margin-left: auto;

@@ -1,12 +1,26 @@
 	//--------------------variable for app--------------
-	var foodieApp = angular.module('foodieApp',[])
-	
-	//--------------------controller----------------
-	
+	var foodieApp = angular.module('foodieApp',['ngRoute']) //------------superpower = module---------
+//----------------------
+	foodieApp.config(function ($routeProvider) {           //---- pass the function as a parameter-------
+	$routeProvider
+	.when('/',{
+		templateUrl: 'pages/login.html',   // first parameter is the url of route and yeh login page ka url btayega like as:- '/'---
+		controller: 'loginController'     // second parameter is an object
+	})
+	.when('/home',{
+		templateUrl: 'pages/main.html',  //-- yeh main page ka url show krega like as:- '/home'-----------
+		controller: 'mainController'
+	})
+})
+//--------------------login controller name----------------------
+	foodieApp.controller('loginController',function($scope) {
+})
+	//-------------------- main controller name----------------
+
 	foodieApp.controller('mainController',function($scope) {
       //$scope.restaurants = ['Farzi Cafe','Pizza Hut','Wenger\'s Deli','Sagar Ratna'];
 	  $scope.restaurants = [{
-	
+
 		name: 'Barbeque Nation',
 			address: 'SCO 39, Madhya Marg, Sector 26, Chandigarh',
 			location: ' Chandigarh',
@@ -27,7 +41,7 @@
 			hours: '11 AM to 11 AM (Mon-Sun)',
 			image: 'https://content4.jdmagicbox.com/comp/chandigarh/s8/0172px172.x172.170128070315.w8s8/catalogue/nihari-chandigarh-hw4if.jpg'
 		},
-	
+
 		{   name: 'Urban Cafe - Hyatt Regency',
 			address: 'Hyatt Regency, 178, Chandigarh Industrial Area, Chandigarh',
 			location: 'Chandigarh',
@@ -61,6 +75,6 @@
 			image: 'http://www.10deals.in/uploads/images/thumbnails/b6a1310c557c794bf7008b46f523911e.jpg'
 		}
 		]
-			
+
 	}
 		)
