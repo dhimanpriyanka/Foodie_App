@@ -6,14 +6,61 @@
 	foodieApp.controller('mainController',function($scope) {
       //$scope.restaurants = ['Farzi Cafe','Pizza Hut','Wenger\'s Deli','Sagar Ratna'];
 	  $scope.restaurants = [{
-	name: 'Farzi Cafe',
-	address: '38/39, Level 1, Block E , Inner Circle, Connaught Place',
-	location: 'Connaught Place',
-	category: 'Casual Dining, Bar',
-	vote: '4.2',
-	cuisines: 'Modern Indian',
-	cost: '2200',
-	hours: '12 Noon to 1 AM (Mon-Sun)',
-	image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
-}]
-})
+	
+		name: 'Barbeque Nation',
+			address: 'SCO 39, Madhya Marg, Sector 26, Chandigarh',
+			location: ' Chandigarh',
+			category: 'Casual Dining, Bar',
+			vote: '4.6',
+			cuisines: 'Modern Indian',
+			cost: '1300',
+			hours: '12 Noon to 1 AM (Mon-Sun)',
+			image: 'http://3.bp.blogspot.com/-6IGY5PzFPeY/VE6B5_v_e5I/AAAAAAAAYMI/gsoOGrDz-eg/s1600/2.jpg'
+		},
+		{ 		name: 'Nihari',
+			address: 'Booth 52, Sector 8 B, Sector 8, Chandigarh',
+			location: 'Chandigarh',
+			category: 'Casual Dining, Bar',
+			vote: '4.3',
+			cuisines: 'Modern Indian',
+			cost: '800',
+			hours: '11 AM to 11 AM (Mon-Sun)',
+			image: 'https://content4.jdmagicbox.com/comp/chandigarh/s8/0172px172.x172.170128070315.w8s8/catalogue/nihari-chandigarh-hw4if.jpg'
+		},
+	
+		{   name: 'Urban Cafe - Hyatt Regency',
+			address: 'Hyatt Regency, 178, Chandigarh Industrial Area, Chandigarh',
+			location: 'Chandigarh',
+			category: 'Casual Dining, Bar',
+			vote: '4.3',
+			cuisines: 'Modern Indian',
+			cost: '1800',
+			hours: '12 Noon to Midnight (Mon-Sun)',
+			image: 'https://media-cdn.tripadvisor.com/media/photo-s/0a/e8/e7/fe/multi-cuisine-restaurant.jpg'
+		},
+		{
+			name: 'The Willow Cafe',
+			address: 'SCO 1, Sector 10D, Sector 10, Chandigarh',
+			location: 'Chandigarh',
+			category: 'Casual Dining, Cafe',
+			vote: '4.1',
+			cuisines: 'Modern Indian',
+			cost: '1300',
+			hours: '12 Noon to 1 AM (Mon-Sun)',
+			image: 'http://www.happytrips.com/photo/55683580/.jpg'
+		},
+		{
+			name: 'All Day 99',
+			address: 'SCO 676, Sector 70, Mohali',
+			location: 'Mohali',
+			category: 'Casual Dining, Bar',
+			vote: '3.7',
+			cuisines: 'Modern Indian',
+			cost: '700',
+			hours: '11 AM to 10:30 PM (Mon-Sun)',
+			image: 'http://www.10deals.in/uploads/images/thumbnails/b6a1310c557c794bf7008b46f523911e.jpg'
+		}
+		]
+			
+	}
+		)

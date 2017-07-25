@@ -57,6 +57,7 @@ body {
 /*------------------restaurant details-----------------*/
 .hero {
     margin-bottom: 2rem;
+	
 }
 
 .restaurant {
@@ -68,11 +69,13 @@ body {
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 4px;
+	
 }
 
 .rest-wrapper {
     display: flex;
     font-family: sans-serif;
+	
 }
 
 .rest-wrapper .image {
