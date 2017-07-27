@@ -1,5 +1,5 @@
 <!--------------------------------------------------login page--------------------------------------------------->
-    <div class="login ng-controller="loginController">
+    <div class="login" ng-controller="loginController">
         <div class="login-form">
             <h3> Login </h3>
 
@@ -24,7 +24,7 @@
     Please enter your super secret ninja password
     </div>
 	</div>
-	<button type="submit" class="btn btn-default" ng-disabled="loginForm.$invalid">Login</button>
+	<button type="submit" class="btn btn-default" ng-disabled="loginForm.$invalid" ng-click="goToHome()">Login</button>     <!----angular js n call kiya gotoHome function ko---->
 </form>
 
 
