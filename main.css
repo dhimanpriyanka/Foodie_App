@@ -152,3 +152,22 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+/*-------------heading jo images ke andr hai uski details-----------*/
+.restro{
+  color:#7FFF00;
+}
+.login-img{
+  background-image: url("https://images7.alphacoders.com/421/421534.jpg");
+  background-size: cover
+}
+.form-img{
+border: solid 5px #000000;
+}
+.btn-default{
+  background-color: brown;
+  color:white;
+}
+h1
+{
+  font-family: Algerian;
+}

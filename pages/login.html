@@ -1,11 +1,22 @@
+
 <!--------------------------------------------------login page--------------------------------------------------->
-    <div class="login" ng-controller="loginController">
-        <div class="login-form">
-            <h3> Login </h3>
+    <div class="login  login-img" ng-controller="loginController">
+
+        <div class="login-form form-img">
+            <h1><center><b><big> Login </big></b></center></h1>
 
 			<!------------------------login form--------------------------------------------->
          <form name="loginForm">
     <div class="form-group">
+      <label for="Name"> Name</label>
+      <input type="name" class="form-control" id="user-name" placeholder="name" name="name" ng-model="user.name" required="">
+</div>
+<div class="form-group">
+  <label for="Name"> Contact no.</label>
+  <input type="name" class="form-control" id="user-name" placeholder="contact" name="name" ng-model="user.contact" required="">
+</div>
+<div class="form-group">
+
         <label for="user-email">Email address</label>
         <input type="email" class="form-control" id="user-email" placeholder="Email" name="email" ng-model="user.email" required="">
         <div ng-show="loginForm.email.$error.required">Required!</div>
@@ -21,10 +32,10 @@
     Password must be at most 15 characters long
     </div>
     <div ng-show="loginForm.password.$error.required">
-    Please enter your super secret ninja password
+    Please enter password
     </div>
 	</div>
-	<button type="submit" class="btn btn-default" ng-disabled="loginForm.$invalid" ng-click="goToHome()">Login</button>     <!----angular js n call kiya gotoHome function ko---->
+	<center><button type="submit" class="btn btn-default" ng-disabled="loginForm.$invalid" ng-click="goToHome()">Login</button></center>     <!----angular js n call kiya gotoHome function ko---->
 </form>
 
 

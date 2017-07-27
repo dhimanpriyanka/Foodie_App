@@ -49,6 +49,10 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		cost: '800',
 		id: '2' ,
 		hours: '11 AM to 11 AM (Mon-Sun)',
+		bestDish: {
+			name: 'Jeera Rice',
+			image: 'https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/16789494_1826634757561374_2917389899113955328_n.jpg'
+		},
 		image: 'https://content4.jdmagicbox.com/comp/chandigarh/s8/0172px172.x172.170128070315.w8s8/catalogue/nihari-chandigarh-hw4if.jpg'
 	},
 //-----------restaurants no.3 ki details---------------------------------
@@ -74,6 +78,10 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		cost: '1300',
 		id: '4' ,
 		hours: '12 Noon to 1 AM (Mon-Sun)',
+		bestDish: {
+			name: 'Corn Zone',
+			image: 'http://www.louisvillehotbytes.com/wp-content/uploads/2011/12/Conefood.jpg'
+		},
 		image: 'http://www.happytrips.com/photo/55683580/.jpg'
 	},
 	//-----------restaurants no.5  ki details---------------------------------
@@ -105,20 +113,14 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 								'Content-Type': 'application/json'
 								 },
 				                 'data': data,
-								//success: function (response) {
 
-				           // $('.ingredients').html(list);
-								//},
-								//error: function (xhr) {
-
-								//}
 
 							}).then(function success(response) {
 								var ingredients = response.data.outputs[0].data.concepts;
 											for (var i =0;i < ingredients.length;i++) {
 											$scope.ingredients.push(ingredients[i].name);
 											}
-											
+
 									}, function error(xhr) {
 									    console.log(xhr);
 									});

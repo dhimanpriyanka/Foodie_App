@@ -28,8 +28,8 @@
           <!-- /.container-fluid -->
       </nav>
       <div class="ui container">
-          <div class="hero">
-              <p>Find the best restaurants in town</p>
+          <div class="hero restro">
+              <p>Mohali and Chandighar restuarants</p>
           </div>
     <!-------------------------------------------search bar------------------------------------------------>
     <div class="search-bar">
@@ -46,7 +46,7 @@
     <div ng-repeat="restaurant in restaurants | filter:query" class="restaurant"> <!---------------- use filter------------------->
   <div class="rest-wrapper">
       <div class="image">
-          <img ng-src="{{restaurant.image}}" height="100" width="100">
+          <img ng-src="{{restaurant.image}}" height="100px" width="100px">
       </div>
       <div class="rest-info">
           <div class="rest-category">
