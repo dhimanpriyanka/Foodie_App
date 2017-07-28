@@ -65,6 +65,10 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		cost: '1800',
 		id: '3' ,
 		hours: '12 Noon to Midnight (Mon-Sun)',
+		bestDish: {
+			name: 'Strawberry-dream-Cake',
+			image: 'http://img1.southernliving.timeinc.net/sites/default/files/styles/story_card_two_thirds/public/image/2016/04/main/strawberry-dream-cake-2428901_0.jpg?itok=61L4VQE_'
+		},
 		image: 'https://media-cdn.tripadvisor.com/media/photo-s/0a/e8/e7/fe/multi-cuisine-restaurant.jpg'
 	},
 	//-----------restaurants no.4 ki details---------------------------------
@@ -95,6 +99,10 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		cost: '700',
 		id: '5' ,
 		hours: '11 AM to 10:30 PM (Mon-Sun)',
+		bestDish: {
+			name: 'ice-cream cone',
+			image: 'https://cdn.theculturetrip.com/wp-content/uploads/2015/06/ice-cream2-pixabay.jpg'
+		},
 		image: 'http://www.10deals.in/uploads/images/thumbnails/b6a1310c557c794bf7008b46f523911e.jpg'
 	}
 	]
@@ -126,6 +134,41 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 									});
 
 								}
+		//----------to do list start-------------------------
+								$scope.ingredients = [];              //array
+		$scope.probabilityvalue=[];
+
+		$scope.toDoList = function(){           //to do list for getting ingredients
+
+
+			 var todoarray = angular.copy($scope.ingredients);
+
+				$scope.todoList = [];
+				for(var i = 0 ; i<todoarray.length; i++){
+				  $scope.todoList.push({todoText:todoarray[i], done:false});
+				}
+
+			   $scope.remove = function() {                     // for removing the ingredients which are not required
+			       var oldList = $scope.todoList;
+			       $scope.todoList = [];
+			       angular.forEach(oldList, function(x) {
+			           if (!x.done) $scope.todoList.push(x);
+			       });
+			   };
+
+			   $scope.done = function() {
+
+			   		console.log("hahahah");
+			   	//	donee=!donee;
+			   		//$.text-decoration: overline;
+
+			   }
+
+
+
+		}
+
+
 })
 
 //-------------------- login page ka controller(hod)----------------------

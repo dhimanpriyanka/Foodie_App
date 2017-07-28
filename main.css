@@ -161,7 +161,8 @@ body {
   background-size: cover
 }
 .form-img{
-border: solid 5px #000000;
+border: solid 4px #000000;
+border-radius:
 }
 .btn-default{
   background-color: brown;
@@ -170,4 +171,70 @@ border: solid 5px #000000;
 h1
 {
   font-family: Algerian;
+}
+/*--------------------- start grocery list detail----------------*/
+/*----------------buttons of grocery shopping list------------------*/
+.list-buttons{
+
+    list-style: none;
+    margin-left: 40px;
+
+}
+/*-----------------get ingredients button ki styling---------------*/
+#button1
+{
+  background-color:#cb202d;
+  color: white;
+  margin-left:-80px;
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+
+}
+
+/*----------- to do list ki styling------------*/
+#button2
+{
+
+    background-color:#cb202d;
+    color: white;
+    margin-left:50px;
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+}
+ /*------------show button ki styling -------*/
+#showbutton
+{
+
+      background-color:#cb202d;
+      color: white;
+      position: absolute;
+      margin-left: 70px;
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      cursor: pointer;
+      margin-top: 12px;
+}
+ /*--------------- remove button ki styling--------------*/
+#removebutton
+{
+  background-color:#cb202d;
+  color: white;
+  position: absolute;
+  margin-left: 300px;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+}
+ /*----------------to so list-------------- */
+.todolist
+{
+  color:red;
+
+}
+.to-do-list{
+    color:grey;
 }
